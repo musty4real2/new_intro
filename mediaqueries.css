@@ -1,8 +1,94 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
+
+    @media screen and (max-width: 600px) {
+      #desktop-nav {
+        display: none;
+      }
     #hamburger-nav {
       display: flex;
+      margin: auto;
     }
+    #banner{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      overflow-x: hidden;
+    }
+    .logo{
+      display: flex;
+      overflow-x: hidden;
+    }
+    .parent-box{
+      display: flex;
+      flex-direction: column-reverse;
+      overflow-x: hidden;
+    }
+    .right{
+      display: none;
+    }
+    .right1{
+      display:flex;
+      visibility: visible;
+      width:100% !important;
+    }
+    .left{
+      width: 100% !important;
+    }
+    .picture{
+      content: '';
+      display:flex;
+      width: 559px;
+      height: 400px;
+      margin: 0;
+      top: 2px;
+    }
+
+    .parentMobile{
+      padding-right:200px;
+      background:hsl(0, 0%, 98%) url("images/icon-arrow-up.svg") no-repeat right center;
+      text-decoration:none;
+      text-decoration-color: hsl(0, 0%, 41%);
+  }
+  .menu-links{
+    justify-content: right;
+    margin-right: -100px;
+    visibility:hidden;
+  }
+  .menu-links a {
+    font-size: 1.0rem;
+  }
+
+
+  .menu-links.open {
+    visibility:visible;
+    transition: ease-in-out;
+    scroll-behavior: smooth;
+  }
+  .menu-links-child{
+    visibility:hidden;
+    display: block;
+    position: absolute;
+    border: 0px solid #000;
+    list-style:none;
+    gap: 1vh;
+    padding: 2vh;
+    justify-content:space-around 2px;
+    width:max-content;
+}
+.parent-item:hover .nav-links-child{
+  
+    visibility: visible;
+    display: block;
+    list-style:none;
+    position: absolute;
+    transition: all 300ms ease;  
+    background-color:white;
+    z-index:auto;
+}
+.parent-item{
+  float:right;
+  border-right: 0px solid #949494;
+  display:block;
+  position:relative;
+  background-color:white;
+}
 }

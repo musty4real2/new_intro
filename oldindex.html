@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>intro section</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="images/logo.svg" alt="snap"/>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="parent-item">
+                    <a href="#about" onclick="toggleMenu()">Features </a><span class="parent"></span>
+                
+                <ul class="nav-links-child">
+                    <li><span class="child-icon"><img src="images/icon-todo.svg"/></span><a href="#">Todo List</a>
+                    </li>
+                    <span class="space">&nbsp;</span>
+                    <li><span class="child-icon"><img src="images/icon-calendar.svg"/></span><a href="#">Calendar</a></li>
+                    <span class="space">&nbsp;</span>
+                    <li><span class="child-icon"><img src="images/icon-reminders.svg"/></span><a href="#">Reminders</a></li>
+                    <span class="space">&nbsp;</span>
+                    <li><span class="child-icon"><img src="images/icon-planning.svg"/></span><a href="#">Planning</a></li>
+                    <span class="space">&nbsp;</span>
+                </ul><br/>
+                </li>
+                <li><a href="#experience" onclick="toggleMenu()">Company </a><span class="parent"></span></li>
+                <li><a href="#projects" onclick="toggleMenu()">Careers </a><span class="parent"></span></li>
+                <li><a href="#contact" onclick="toggleMenu()">About </a><span class="parent"></span></li>
+            </ul>
+        </div>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+            <div>
+
+            </div>
+         
+        <div>
+           
+            <ul class="nav-links">
+
+                <div class="login-link">
+                <li><a href="#" onclick="toggleMenu()">Login </a></li>
+                </div>
+           
+            <li>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Register
+                </button>
+              </div>
+            </li>
+            </ul>
+        </div>
+        
+        
+      
+    </nav>
+
+
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="images/logo.svg" alt="snap"/>
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li class="parent-item">
+                <a href="#about" onclick="toggleMenu()">Features </a><span class="parentMobile"></span>
+            
+            <ul class="nav-links-child">
+                <li><span class="child-icon"><img src="images/icon-todo.svg"/></span><a href="#">Todo List</a>
+                </li>
+                <span class="space">&nbsp;</span>
+                <li><span class="child-icon"><img src="images/icon-calendar.svg"/></span><a href="#">Calendar</a></li>
+                <span class="space">&nbsp;</span>
+                <li><span class="child-icon"><img src="images/icon-reminders.svg"/></span><a href="#">Reminders</a></li>
+                <span class="space">&nbsp;</span>
+                <li><span class="child-icon"><img src="images/icon-planning.svg"/></span><a href="#">Planning</a></li>
+                <span class="space">&nbsp;</span>
+            </ul>
+            </li>
+            <li><a href="#experience" onclick="toggleMenu()">Company </a><span class="parentMobile"></span></li>
+            <li><a href="#projects" onclick="toggleMenu()">Careers </a><span class="parentMobile"></span></li>
+            <li><a href="#contact" onclick="toggleMenu()">About </a><span class="parentMobile"></span></li>
+        </ul>
+          </div>
+        </div>
+        </div>
+    
+    </nav>
+
+
+    <section id="banner">
+    <div id="parent-box">
+        <div id="card-left">
+            <div class="banner__text">
+                <h1 class="title">Make <br/>remote work</h1>
+                <p class="banner__text__p1">Get your team in sync, no matter your location. 
+                    <br/>Streamline processes. create team rituals, and 
+                    <br/>watch productivity soar.</p>
+<br/>
+                    <div class="btn-container-1">
+                        <button class="btn btn-color-2">
+                        Learn more
+                        </button>
+                    </div>
+
+                        <div class="tag-pic">
+                             <img src="images/client-databiz.svg">
+                        </div>
+                        <div class="tag-pic">
+                            <img src="images/client-audiophile.svg">
+                        </div>
+                        <div class="tag-pic">
+                            <img src="images/client-meet.svg">
+                        </div>
+
+                         <div class="tag-pic">
+                             <img src="images/client-maker.svg">
+                         </div>
+                
+            </div>
+           
+        </div>
+    
+        <div id="card-right">
+          
+            <img src="images/image-hero-desktop.png" alt="picture" class="picture">
+        </div>
+        <div>
+            &nbsp;
+        </div>
+    </div>
+    </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
